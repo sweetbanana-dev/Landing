@@ -28,9 +28,9 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Years of experience", value: "20+" },
+  { label: "Technologies mastered", value: "25+" },
+  { label: "Companies worked with", value: "50+" },
 ];
 
 const projects = [
@@ -57,12 +57,6 @@ const projects = [
     description: "Robotics-focused technology company",
     image: "/assets/wrona.jpeg",
     href: "https://www.wrona.com/",
-  },
-  {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
   },
 ];
 
@@ -92,9 +86,9 @@ const services = [
     icon: MonitorSmartphone,
   },
   {
-    service: "Backend Development",
+    service: "Customizable Templates",
     description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
+      "Access a variety of pre-designed templates that can be tailored to fit any brand or style.",
     icon: Eye,
   },
 ];
@@ -190,9 +184,9 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>Figma</span>
+              <span className={styles.pill}>Responsive Design</span>
+              <span className={styles.pill}>Graphic Design</span>
             </div>
             <div>
               <h1
@@ -201,12 +195,8 @@ export default function Home() {
                 data-scroll-speed=".06"
                 data-scroll-direction="horizontal"
               >
-                <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
-                  Hello, I&apos;m
-                  <br />
-                </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  RABIT VENTURE LIMITED
                 </span>
               </h1>
               <p
@@ -215,8 +205,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                Our company lets designers and businesses easily create stunning websites without coding.
               </p>
             </div>
             <span
@@ -225,11 +214,6 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
-                <Button>
-                  Get in touch <ChevronRight className="ml-1 h-4 w-4" />
-                </Button>
-              </Link>
               <Button
                 variant="outline"
                 onClick={() => scrollTo(document.querySelector("#about"))}
@@ -268,20 +252,7 @@ export default function Home() {
             data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
-                href="https://create.t3.gg/"
-                target="_blank"
-                className="underline"
-              >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">Our platform provides designers and businesses with intuitive, easy-to-use tools to create visually stunning websites without the need for coding. From customizable templates to powerful design features, we empower users to build responsive and modern websites that captivate and engage their audience.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -323,10 +294,10 @@ export default function Home() {
               ✨ Projects
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
-              Streamlined digital experiences.
+              Real experiences.
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;ve worked on a variety of projects, from small websites to
+              We&apos;ve worked on a variety of projects, from small websites to
               large-scale web applications. Here are some of my favorites:
             </p>
 
@@ -338,7 +309,6 @@ export default function Home() {
                     <CarouselItem key={project.title} className="md:basis-1/2">
                       <Card id="tilt">
                         <CardHeader className="p-0">
-                          <Link href={project.href} target="_blank" passHref>
                             {project.image.endsWith(".webm") ? (
                               <video
                                 src={project.image}
@@ -357,7 +327,6 @@ export default function Home() {
                                 className="aspect-video h-full w-full rounded-t-md bg-primary object-cover"
                               />
                             )}
-                          </Link>
                         </CardHeader>
                         <CardContent className="absolute bottom-0 w-full bg-background/50 backdrop-blur">
                           <CardTitle className="border-t border-white/5 p-4 text-base font-normal tracking-tighter">
@@ -404,11 +373,11 @@ export default function Home() {
                   Need more info?
                   <br />
                   <span className="text-gradient clash-grotesk tracking-normal">
-                    I got you.
+                    We got you.
                   </span>
                 </h2>
                 <p className="mt-2 tracking-tighter text-secondary-foreground">
-                  Here are some of the services I offer. If you have any
+                  Here are some of the services We offer. If you have any
                   questions, feel free to reach out.
                 </p>
               </div>
@@ -439,16 +408,17 @@ export default function Home() {
             className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
           >
             <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
-              Let&apos;s work{" "}
-              <span className="text-gradient clash-grotesk">together.</span>
+              Contact{" "}
+              <span className="text-gradient clash-grotesk">{" "}Information</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for freelance work and open to
-              discussing new projects.
+            SHANTO AHAMMED<br />
+            rabitventurelimited1@outlook.com<br />
+            481 Hinkler Road<br />
+            Southampton<br />
+            SO19 6DN<br />
+            United Kingdom<br />
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
-              <Button className="mt-6">Get in touch</Button>
-            </Link>
           </div>
         </section>
       </div>
